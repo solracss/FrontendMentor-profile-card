@@ -10,12 +10,9 @@ body {
 	min-height: 100vh;
 	font-family: $ff-base;
 	font-size: rem(18px);
+	font-weight: $fw-bold;
 	color: $main;
 	background-color: $dark-cyan;
-}
-
-ul {
-	list-style: none;
 }
 
 .profile-summary {
@@ -23,6 +20,7 @@ ul {
 	border-radius: 15px;
 	overflow: hidden;
 	background-color: $white;
+	box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.5);
 }
 
 .profile-top-background {
@@ -39,4 +37,56 @@ ul {
 .profile-picture {
 	border-radius: 50%;
 	border: 5px solid $white;
+}
+
+.personal-info {
+	margin-top: -36px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+}
+
+.profile-name {
+	font-size: rem(18px);
+	line-height: normal;
+}
+
+.profile-age,
+.profile-city {
+	padding-left: 5px;
+	font-weight: $fw-regular;
+	color: $gray;
+}
+
+.profile-city {
+	font-size: rem(14px);
+	line-height: 14px;
+}
+
+.profile-stats {
+	margin-top: 28px;
+	padding: 24px 0 24px;
+	border-top: 1px solid $light-gray;
+}
+
+.profile-stats-stat-list {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	list-style: none;
+}
+
+.profile-stats-stat-name {
+	display: block;
+	font-size: rem(10px);
+	color: $gray;
+	font-weight: $fw-regular;
+	letter-spacing: rem(1.5px);
+}
+
+@media (min-width: 600px) {
+	.profile-summary {
+		max-width: 350px;
+	}
 }
