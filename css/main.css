@@ -50,11 +50,41 @@ button {
     cursor: pointer;
 }
 
-textarea {
-    resize: vertical;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    min-height: 100vh;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 1.125rem;
+    color: #2e3349;
+    background-color: #19a1ae;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+ul {
+    list-style: none;
+}
+
+.profile-summary {
+    max-width: 326px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.profile-top-background {
+    height: 140px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -53px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    border: 5px solid #fff;
 }/*# sourceMappingURL=main.css.map */
