@@ -61,6 +61,11 @@ body {
     font-weight: 700;
     color: #2e3349;
     background-color: #19a1ae;
+    overflow: hidden;
+}
+
+html {
+    overflow: auto;
 }
 
 .profile-summary {

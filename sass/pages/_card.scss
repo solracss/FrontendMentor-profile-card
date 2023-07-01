@@ -13,12 +13,16 @@ body {
 	font-weight: $fw-bold;
 	color: $main;
 	background-color: $dark-cyan;
+	overflow: hidden;
+}
+
+html {
+	overflow: auto;
 }
 
 .profile-summary {
 	max-width: 326px;
 	border-radius: 15px;
-	// overflow: hidden;
 	background-color: $white;
 	box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.5);
 	position: relative;
